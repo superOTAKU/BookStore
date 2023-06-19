@@ -1,0 +1,30 @@
+# Visual Studio files
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+*.log
+*.vspscc
+*.vssscc
+*.zip
+*.7z
+*.sln.docstates
+
+# NuGet packages
+*.nuget/
+packages/
+*.nupkg
+!.nuget/packages/repositories.config
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
