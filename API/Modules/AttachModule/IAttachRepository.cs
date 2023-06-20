@@ -9,4 +9,6 @@ public interface IAttachRepository : IRepository
     void Add(Attach attach);
 
     Attach? GetById(int id);
+
+    IEnumerable<Attach> GetList(string componentType, string componentId);
 }

@@ -19,4 +19,9 @@ public class AttachRepository : RepositoryBase, IAttachRepository
     {
         return Db.Attaches.Where(e => e.Id == id).FirstOrDefault();
     }
+
+    public IEnumerable<Attach> GetList(string componentType, string componentId)
+    {
+        return Db.Attaches.Where(e => e.ComponentType == componentType && e.ComponentId == componentId);
+    }
 }
